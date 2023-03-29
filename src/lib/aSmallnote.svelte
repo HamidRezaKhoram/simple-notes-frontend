@@ -75,8 +75,19 @@
 {/if}
 <div
 on:pointerenter={() => {
+	if(mode !== "mobile"){
     hover = 'w-[33%]';
     del = 'Delete';
+	}else{
+		if(hover == ''){
+			hover = 'w-[33%]';
+   			 del = 'Delete';
+		}else{
+			hover = '';
+   			 del = '';
+		}
+	}
+	
 }}
 on:pointerleave={() => {
 	if(mode !== "mobile"){

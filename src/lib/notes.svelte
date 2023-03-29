@@ -71,8 +71,18 @@
 {/if}
 <div
 	on:pointerenter={() => {
-		hover = 'w-[33%]';
-			del = 'Delete';
+		if(mode !== "mobile"){
+    hover = 'w-[33%]';
+    del = 'Delete';
+	}else{
+		if(hover == ''){
+			hover = 'w-[33%]';
+   			 del = 'Delete';
+		}else{
+			hover = '';
+   			 del = '';
+		}
+	}
 	}}
 	on:pointerleave={() => {
 		if(mode!="mobile"){
@@ -102,7 +112,7 @@
 		</button>
 	{/if}
 	<button
-		class="min-w-full h-full inline-block text-ellipsis"
+		class="min-w-full h-full inline-block text-ellipsis py-6"
 		on:click={() => {
 			$state = id;
 
