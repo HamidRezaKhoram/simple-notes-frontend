@@ -62,15 +62,27 @@
 		$arr = arrayNote;
 		$write = notes;
 	};
+	let screenWidth;
+	let mode="pc";
 </script>
+<svelte:window bind:innerWidth={screenWidth} />
+{#if screenWidth < 600}
+	<dic class="hidden">
+	{mode="mobile"}
+</dic>
+{:else}
+ 
+{/if}
 <div
 on:pointerenter={() => {
     hover = 'w-[33%]';
     del = 'Delete';
 }}
 on:pointerleave={() => {
+	if(mode !== "mobile"){
     hover = '';
     del = '';
+	}
 }}
 class=" text-ellipsis mx-auto relative min-w-full h-full max-w-sm py-6  border  rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
 >
