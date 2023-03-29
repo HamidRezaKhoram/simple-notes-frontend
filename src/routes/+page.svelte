@@ -66,18 +66,21 @@
 		<footer class="bottom-0" />
 		<div class="sticky top-[95vh]"><Footer /></div>
 	</div>
-{:else}
-	<div class=" absolute min-h-screen top-10 py-10 items-center justify-center">
+<div class="          grid
+	content-center 
+	mx-auto
+	max-w-2xl
+	rounded-lg
+	mt-16 items-center justify-center">
 		<div
-			class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-			role="status"
-		>
-			<span
-				class="!absolute py-10 !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-				>Loading...</span
-			>
+		  class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+		  role="status">
+		  <span
+			class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+			>Loading...</span
+		  >
 		</div>
-	</div>
+	  </div>
 {/if}
 
 <style>
