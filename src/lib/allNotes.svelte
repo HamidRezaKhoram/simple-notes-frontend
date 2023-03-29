@@ -97,6 +97,7 @@
 		}
 		$arr = arrayNote;
 		$write = notes;
+		$timer = 1000;
 	};
 
 	export async function dele(noteId: string){
