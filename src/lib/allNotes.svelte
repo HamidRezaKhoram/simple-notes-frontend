@@ -212,7 +212,7 @@
 </div> -->
 	<div class=" ">
 		<div
-			class=" mx-auto block max-w-sm min-w-full  border  border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+			class=" mx-auto block max-w-sm min-w-full h-full  border  border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
 		>
 			<div>
 				<input

@@ -57,20 +57,28 @@
 		$arrS = arr2
 		
 	};
-
+	let screenWidth:any;
+	let mode = "pc";
 </script>
 
+<svelte:window bind:innerWidth={screenWidth} />
+{#if screenWidth < 600}
+	{mode="mobile"}
+{:else}
+ 
+{/if}
 <div
 	on:pointerenter={() => {
 		hover = 'w-[33%]';
 			del = 'Delete';
 	}}
 	on:pointerleave={() => {
-
+		if(mode!="mobile"){
 		hover = '';
 		del = '';
+		}
 	}}
-	class=" text-ellipsis  group mx-auto relative min-w-full h-full {pointer} max-w-sm py-6  border  rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+	class=" text-ellipsis  group mx-auto relative min-w-full h-full {pointer} max-w-sm  border  rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
 >
 	{#if hover == 'w-[33%]'}
 		<button
@@ -92,7 +100,7 @@
 		</button>
 	{/if}
 	<button
-		class="min-w-full inline-block text-ellipsis"
+		class="min-w-full h-full inline-block text-ellipsis"
 		on:click={() => {
 			$state = id;
 
@@ -113,7 +121,7 @@
 		{/if}
 
 		<p
-			class="w-fit flex-none mx-auto text-2xl  overflow-hidden text-clip font-bold tracking-tight text-gray-900 {pointer} dark:text-white"
+			class="w-fit flex-none mx-auto text-2xl h-auto  overflow-hidden text-clip font-bold tracking-tight text-gray-900 {pointer} dark:text-white"
 		>
 			{#if content.length < 35}
 				{content}
