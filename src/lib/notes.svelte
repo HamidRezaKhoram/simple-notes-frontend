@@ -63,7 +63,9 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 {#if screenWidth < 600}
+	<dic class="hidden">
 	{mode="mobile"}
+</dic>
 {:else}
  
 {/if}
