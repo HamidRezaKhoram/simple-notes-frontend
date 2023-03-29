@@ -131,12 +131,12 @@ class=" text-ellipsis mx-auto relative min-w-full h-full max-w-sm py-6  border  
     rel="noreferrer"
 >
     <h5
-        class="w-fit m-auto flex-none mx-auto text-2xl  overflow-hidden text-clip font-bold tracking-tight text-gray-900 dark:text-white"
+        class="select-none w-fit m-auto flex-none mx-auto text-2xl  overflow-hidden text-clip font-bold tracking-tight text-gray-900 dark:text-white"
     >
         {title['Title']}
     </h5>
     <p
-        class="m-auto font-normal w-fit max-h-full max-w-sm text-ellipsis text-gray-700 dark:text-gray-400"
+        class="select-none m-auto font-normal w-fit max-h-full max-w-sm text-ellipsis text-gray-700 dark:text-gray-400"
     >
 
         {@html title['Content'].slice(0, 25)}

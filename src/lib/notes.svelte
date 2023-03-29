@@ -133,7 +133,7 @@
 		{/if}
 
 		<p
-			class="w-fit flex-none mx-auto text-2xl h-auto  overflow-hidden text-clip font-bold tracking-tight text-gray-900 {pointer} dark:text-white"
+			class="w-fit flex-none mx-auto text-2xl h-auto  overflow-hidden text-clip font-bold tracking-tight text-gray-900 {pointer} dark:text-white select-none"
 		>
 			{#if content.length < 35}
 				{content}
