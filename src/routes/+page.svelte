@@ -57,7 +57,8 @@
 				}}
 				class="md:p-2 py-1 my-2 block  px-1 text-base  rounded-md  text-slate-1000"
 				><p class=" w-[50%] m-auto border-2 rounded-lg border-black hover:bg-slate-300">
-					Start taking notes now! {import.meta.env.VITE_PUBLIC_ASS} {import.meta.env.VITE_PUBLIC_URL}
+					Start taking notes now! 
+					<!-- {import.meta.env.VITE_PUBLIC_ASS} {import.meta.env.VITE_PUBLIC_URL} -->
 				</p></button
 			>
 		</div>
