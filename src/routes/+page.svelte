@@ -66,7 +66,9 @@
 		<footer class="bottom-0" />
 		<div class="sticky top-[95vh]"><Footer /></div>
 	</div>
-<div class="          grid
+
+	{:else}
+	<div class="          grid
 	content-center 
 	mx-auto
 	max-w-2xl
@@ -81,7 +83,7 @@
 		  >
 		</div>
 	  </div>
-{/if}
+	{/if}
 
 <style>
 	:global(body) {
