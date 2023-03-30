@@ -12,6 +12,10 @@ This SvelteKit app was developed by [Hamidreza Khoramrokh](https://github.com/Ha
 - User authentication using JWT tokens.
 - Responsive UI design using Tailwind CSS.
 
+## Deployment
+
+This repository is currently deployed on [Netlify](https://www.netlify.com/), a cloud-based platform that offers continuous deployment and hosting for modern web projects.
+
 ## Usage
 
 Navigate to [simple-notes](https://simple-notes.hamidrezakhoramrokh.ir/) in your browser. You can try out all of the functions yourself and give us feedback!
@@ -23,3 +27,5 @@ Contributions are welcome! If you find a bug or would like to add a new feature,
 ## Credits
 
 Special thanks to SvelteKit, Tailwind CSS, and especially [Flowbite](https://flowbite.com/) for making development so easy and enjoyable.
+
+## 💛&☕ fuelled this project!
