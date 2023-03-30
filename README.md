@@ -28,4 +28,5 @@ Contributions are welcome! If you find a bug or would like to add a new feature,
 
 Special thanks to SvelteKit, Tailwind CSS, and especially [Flowbite](https://flowbite.com/) for making development so easy and enjoyable.
 
-## 💛&☕ fuelled this project!
+## 
+### 💛&☕ fuelled this project!
