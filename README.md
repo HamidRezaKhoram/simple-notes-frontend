@@ -1,38 +1,25 @@
-# create-svelte
+# Simple-Notes
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This frontend is built using `SvelteKit` and `Tailwind CSS`. It fetches user data from a `PostgreSQL` database backend that is connected to our frontend via our [GO RESTful API](https://github.com/HamidRezaKhoram/simple-note-backend).
 
-## Creating a project
+## Developers
 
-If you're seeing this, you've probably already done this step. Congrats!
+This SvelteKit app was developed by [Hamidreza Khoramrokh](https://github.com/HamidRezaKhoram/) and [Daniel Ibanescu](https://github.com/zazu7765).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Create, read, update, and delete notes and notebooks.
+- User authentication using JWT tokens.
+- Responsive UI design using Tailwind CSS.
 
-## Developing
+## Usage
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Navigate to [simple-notes](https://simple-notes.hamidrezakhoramrokh.ir/) in your browser. You can try out all of the functions yourself and give us feedback!
 
-```bash
-npm run dev
+## Contributing
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Contributions are welcome! If you find a bug or would like to add a new feature, please open an issue or submit a pull request.
 
-## Building
+## Credits
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Special thanks to SvelteKit, Tailwind CSS, and especially [Flowbite](https://flowbite.com/) for making development so easy and enjoyable.
